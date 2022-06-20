@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Medical</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<section class="header">
+			<h1 class="logo">Healthbag</h1>
+				<div class="logo1">
+					<div class="section1"></div>
+					<div class="section2"></div>
+				</div>
+			<nav>
+				<div class="nav-links">
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Service</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Our Team</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><btn class="btn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto;">Login</btn></li>
+					</ul>
+				</div>
+			</nav>
+			<div id='login-form'class='login-page'>
+	            <div class="form-box">
+	                <div class='button-box'>
+	                    <div id='btn'></div>
+	                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+	                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+	                </div>
+	                <form id='login' class='input-group-login'>
+	                    <input type='text'class='input-field'placeholder='Email Id' required >
+					    <input type='password'class='input-field'placeholder='Enter Password' required>
+					    <input type='checkbox'class='check-box'><span>Remember Password</span>
+					    <button type='submit'class='submit-btn'>Log in</button>
+					 </form>
+					 <form id='register' class='input-group-register'>
+					     <input type='text'class='input-field'placeholder='First Name' required>
+					     <input type='text'class='input-field'placeholder='Last Name ' required>
+					     <input type='email'class='input-field'placeholder='Email Id' required>
+					     <input type='password'class='input-field'placeholder='Enter Password' required>
+					     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+					     <input type='checkbox'class='check-box'><span1>I agree to the terms and conditions</span1>
+			             <button type='submit'class='submit-btn'>Register</button>
+				      </form>
+	            </div>
+	        </div>
+    	<script>
+	        var x=document.getElementById('login');
+			var y=document.getElementById('register');
+			var z=document.getElementById('btn');
+			function register()
+			{
+				x.style.left='-400px';
+				y.style.left='50px';
+				z.style.left='110px';
+			}
+			function login()
+			{
+				x.style.left='50px';
+				y.style.left='450px';
+				z.style.left='0px';
+			}
+		</script>
+		<script>
+	        var modal = document.getElementById('login-form');
+	        window.onclick = function(event) 
+	        {
+	            if (event.target == modal) 
+	            {
+	                modal.style.display = "none";
+	            }
+	        }
+	    </script>
+		</div>
+		<div class="row">
+			<div class="paragraph">
+				<h2 class="slogan">Find the good life by<br>good health :)</h2> 
+				<p>Official Public Service Announcement on Coronavirus from the<br>World Health Organization. Learn about Symptoms, Prevention,<br> Travel Advisory and common about Coronavirus</p>  
+				<btn class="btn1">Learn More..</btn>
+			</div>
+			<div class="photograph">
+				<img src="Images/img.png">
+			</div>
+		</div>
+	</section>
+
+<!---------------explore ------------------------>
+	<section class="explore">
+		<div class="exp">
+			<h1>Explore by<br>Category <i class="fa fa-arrow-circle-o-right" id="arrow"></i></h1>
+			<div class="row">
+				<div class="col-1">
+					<i class="fa fa-user-md" id="symbol"></i>
+					<h3>Doctors</h3>
+					<p>Lorem ipsum is simply<br> dummy text of the</p>
+				</div>
+				<div class="col-1">
+					<i class="fa fa-hospital-o" id="symbol"></i>
+					<h3>Clinics</h3>
+					<p>Lorem ipsum is simply<br> dummy text of the</p>
+				</div>
+				<div class="col-1">
+					<i class="fa fa-flask" id="symbol"></i>
+					<h3>Labs</h3>
+					<p>Lorem ipsum is simply<br> dummy text of the</p>
+				</div>
+				<div class="col-1">
+					<i class="fa fa-ambulance" id="symbol"></i>
+					<h3>Emergency</h3>
+					<p>Lorem ipsum is simply<br> dummy text of the</p>
+				</div>
+				<div class="col-1">
+					<i class="fa fa-medkit" id="symbol"></i>
+					<h3>Insurance</h3>
+					<p>Lorem ipsum is simply<br> dummy text of the</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<img src="Images/img2.jpg">
+				</div>
+				<div class="row1">
+					<div class="col-2">
+						<i class="fa fa-briefcase" id="bag"></i><h3>Our Missions</h3>
+						<p>Lorem ipsum is simply dummy text of the printing and<br> typesetting industry.</p>
+					</div>
+					<div class="col-2">
+						<i class="fa fa-briefcase" id="bag"></i><h3>Who we are</h3>
+						<p>Lorem ipsum is simply dummy text of the printing and<br> typesetting industry.</p>
+					</div>
+					<div class="col-2">
+						<i class="fa fa-briefcase" id="bag"></i><h3>Our Vision</h3>
+						<p>Lorem ipsum is simply dummy text of the printing and<br> typesetting industry.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--------------------Services---------------------->
+	<section class="service">
+		<div class="row">
+			<div class="paragraph">
+				<h2 class="slogan">Good service and better<br> health by our specialist</h2> 
+				<p>Lorem ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem ipsum printer took a gallery of type and scrambled it to make type<br> specimen book.</p>
+				<btn class="btn1">Book Now</btn>
+			</div>
+			<div class="photograph">
+				<img src="Images/img12.png">
+			</div>
+		</div>
+	</section>
+
+<!--------------------Follow--------------------->
+	<section class="follow">
+		<h1>Follw the latest articles and news 
+			<div class="arr">
+				<i class="fa fa-arrow-circle-o-left" id="left"></i>
+				<i class="fa fa-arrow-circle-o-right" id="right"></i>
+			</div>
+		</h1>
+			<div class="row">
+				<div class="col-4">
+					<img src="Images/img5.jpg">
+					<p1>29 june, 2020</p1>
+					<h3>We believe in great ideas and deads</h3>
+					<p>Lorem ipsum is simply<br> dummy text of the printing and typesetting industry.</p>
+					<btn class="btn2">Read More <i class="fa fa-arrow-circle-right" id="sym"></i></btn>
+				</div>
+				<div class="col-4">
+					<img src="Images/img10.jpg">
+					<p1>29 june, 2020</p1>
+					<h3>We believe in great ideas and deads</h3>
+					<p>Lorem ipsum is simply<br> dummy text of the printing and typesetting industry. </p>
+					<btn class="btn2">Read More <i class="fa fa-arrow-circle-right" id="sym"></i></btn>
+				</div>
+				<div class="col-4">
+					<img src="Images/team.jpg">
+					<p1>29 june, 2020</p1>
+					<h3>We believe in great ideas and deads</h3>
+					<p>Lorem ipsum is simply<br> dummy text of the printing and typesetting industry.</p>
+					<btn class="btn2">Read More <i class="fa fa-arrow-circle-right" id="sym"></i></btn>
+				</div>
+			</div>
+	</section>
+
+
+<!--------------------Footer-------------------------->
+	<section class="footer">
+		<div class="row">
+			<div class="col-5">
+				<h3 class="slo">About Us</h3> 
+				<p1>Official Public Service Announcements on Prevention, Travel Advisory and Common about Coronavirus</p> 
+			</div>
+			<div class="col-5">
+				<h3 class="slo">Useful Links</h3> 
+				<p1>About Us<br>Our mission<br>How it Work?<br>Our team</p> 
+			</div>
+			<div class="col-5">
+				<h3 class="slo">More</h3> 
+				<p1>About Us<br>Our mission<br>How it Work?</p> 
+			</div>
+			<div class="col-5">
+				<h3 class="slo">Newsletter</h3> 
+				<input name="email" id="email" placeholder="enter your email"><i class="fa fa-caret-square-o-right" id="square"></i>
+			</div>
+			<div class="logo3">
+				<div class="section7"></div>
+				<div class="section8"></div>
+			</div>
+			<div class="logo2">
+				<div class="section5"></div>
+				<div class="section6"></div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
